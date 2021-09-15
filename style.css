@@ -1,0 +1,201 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+/* Base */
+body{
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+}
+
+#page-container{
+    min-height: 100vh;
+    background-image: url("images/pattern-curve.svg");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    background-size: 70%;
+}
+
+main{
+    width: 88%;
+    margin: auto;
+}
+
+/* Photo and button management */
+#photo-container {
+    background: url("images/pattern-bg.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: 20px auto;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+#photo-container figure{
+    margin-top: 0px;
+}
+
+#photo-container figure img{
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 33px;
+    box-shadow: 0px 38px 38px -18px rgba(32, 32, 70, 0.35);
+}
+
+#photo-container div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 30px;
+}
+
+#photo-container div button{
+    background-color: white;
+    border: none;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo-container div button:hover{
+    background-color: #f4f4fc;
+}
+
+#photo-container div button img{
+    height: 14px;
+}
+
+#photo-container div button:first-child{
+    border-radius: 20px 0px 0px 20px;
+}
+
+#photo-container div button:last-child{
+    border-radius: 0px 20px 20px 0px;
+}
+
+/* Text management */
+section p{
+    text-align: center;
+}
+
+section p:first-child{
+    background: url("images/pattern-quotes.svg");
+    background-size: 18%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    padding-top: 24px;
+    font-size: 0.56em;
+    font-weight: 300;
+    line-height: 25px;
+    color: hsl(240, 38%, 20%);
+}
+
+section p:last-child{
+    font-size: 0.48em;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+section p:last-child span{
+    color: hsl(240, 18%, 77%);
+    font-weight: 500;
+}
+
+#second-person{
+    display: none;
+}
+
+/* Attribution management */
+
+.attribution{
+    margin-top: 50px;
+    font-size: 0.35em;
+    text-align: center;
+}
+
+.attribution a{
+    color:hsl(240, 38%, 20%);
+    font-weight: bold;
+}
+
+@media screen and (min-width: 720px){
+    #photo-container{
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 720px){
+    #photo-container{
+        width: 60%;
+    }
+}
+
+@media screen and (min-width: 1040px){
+    #page-container{
+        min-height: auto;
+        width: 90%;
+        margin: auto;
+        margin-top: 150px;
+        background-size: 44%;
+    }
+
+    main{
+        width: 100%;
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    #photo-container{
+        width: 50%;
+        background-size: auto 100%;
+        margin-left: 40%;
+    }
+
+    #photo-container figure{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #photo-container figure img{
+        width: 90%;
+    }
+
+    section{
+        width: 40%;
+        position: absolute;
+        left: 23%;
+    }
+
+    section p{
+        text-align: start;
+        width: 70%;
+    }
+
+    section p:first-child{
+        background-position-x: 18%;
+        padding-top: 42px;
+    }
+
+    .attribution{
+        padding-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 1350px){
+    #page-container{
+        width: 70%;   
+    }
+}
+
+
+
