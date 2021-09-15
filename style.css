@@ -3,17 +3,14 @@
 
 /* Base */
 body{
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    font-size: 32px;
-}
-
-#page-container{
     min-height: 100vh;
+    margin: 0;
     background-image: url("images/pattern-curve.svg");
     background-repeat: no-repeat;
     background-position: bottom left;
     background-size: 70%;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
 }
 
 main{
@@ -122,29 +119,18 @@ section p:last-child span{
     font-weight: bold;
 }
 
-@media screen and (min-width: 720px){
+@media screen and (min-width: 710px){
     #photo-container{
-        width: 80%;
-    }
-}
-
-@media screen and (min-width: 720px){
-    #photo-container{
-        width: 60%;
+        width: 70%;
     }
 }
 
 @media screen and (min-width: 1040px){
-    #page-container{
-        min-height: auto;
-        width: 90%;
-        margin: auto;
-        margin-top: 150px;
+    body{
         background-size: 44%;
     }
 
     main{
-        width: 100%;
         margin-top: 60px;
         display: flex;
         flex-direction: row-reverse;
@@ -170,30 +156,37 @@ section p:last-child span{
     }
 
     section{
-        width: 40%;
+        width: 50%;
         position: absolute;
-        left: 23%;
+        left: 15%;
     }
 
     section p{
         text-align: start;
-        width: 70%;
+        width: 80%;
     }
 
     section p:first-child{
         background-position-x: 18%;
         padding-top: 42px;
-    }
-
-    .attribution{
-        padding-bottom: 20px;
-        margin-top: 20px;
+        font-size: 0.7em;
+        line-height: 28px;
     }
 }
 
-@media screen and (min-width: 1350px){
-    #page-container{
-        width: 70%;   
+@media screen and (min-width: 1440px){
+    section{
+        left: 10%;
+    }
+
+    section p:first-child{
+        font-size: 0.9em;
+        line-height: 35px;
+    }
+
+    section p{
+        text-align: start;
+        width: 90%;
     }
 }
 
