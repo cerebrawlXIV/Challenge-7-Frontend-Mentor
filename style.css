@@ -172,11 +172,12 @@ section p:last-child span{
         background-position-x: 18%;
         padding-top: 42px;
         font-size: 0.7em;
-        line-height: 28px;
+        line-height: 34px;
     }
 
     section p:last-child{
         flex-direction: row;
+        font-size: 0.53em;
     }
 
     section p:last-child span{
@@ -187,7 +188,7 @@ section p:last-child span{
         justify-content: start;
         position: absolute;
         bottom: 20px;
-        left: 180px;
+        left: 140px;
     }
 
     #photo-container div button{
@@ -213,14 +214,18 @@ section p:last-child span{
         left: 6%;
     }
 
-    section p:first-child{
-        font-size: 0.9em;
-        line-height: 35px;
-    }
-
     section p{
         text-align: start;
         width: 90%;
+    }
+
+    section p:first-child{
+        font-size: 0.9em;
+        line-height: 40px;
+    }
+
+    section p:last-child{
+        font-size: 0.6em;
     }
 
     #photo-container div button{
